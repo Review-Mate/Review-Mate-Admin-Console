@@ -7,7 +7,7 @@ import {
   MixedWidget8,
   CardsWidget7,
   CardsWidget20,
-  ChartsWidget8,
+  ChartsWidget9,
 } from '../../../_metronic/partials/widgets'
 
 const DashboardPage: FC = () => (
@@ -15,7 +15,7 @@ const DashboardPage: FC = () => (
     {/* begin::Row */}
     <div className='row g-5 g-xl-10 mb-5 mb-xl-10'>
       {/* begin::Col */}
-      <ChartsWidget8 className='card-xl-stretch mb-5 mb-xl-8' />
+      <ChartsWidget9 className='card-xl-stretch mb-5 mb-xl-8' />
       <div className='col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10'>
         <CardsWidget20
           className='h-md-50 mb-5 mb-xl-10'
