@@ -1,50 +1,64 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {FC} from 'react'
 import {useIntl} from 'react-intl'
-import {toAbsoluteUrl} from '../../../_metronic/helpers'
 import {PageTitle} from '../../../_metronic/layout/core'
 import {
-  MixedWidget8,
-  CardsWidget7,
-  CardsWidget20,
   ChartsWidget9,
+  ChartsWidget1,
+  ChartsWidget10,
+  StatisticsWidget7,
 } from '../../../_metronic/partials/widgets'
 
 const DashboardPage: FC = () => (
   <>
-    {/* begin::Row */}
-    <div className='row g-5 g-xl-10 mb-5 mb-xl-10'>
+    {/* begin::Raw */}
+    <div className='row g-5 g-xl-10'>
       {/* begin::Col */}
-      <ChartsWidget9 className='card-xl-stretch mb-5 mb-xl-8' />
-      <div className='col-md-6 col-lg-6 col-xl-6 col-xxl-3 mb-md-5 mb-xl-10'>
-        <CardsWidget20
-          className='h-md-50 mb-5 mb-xl-10'
-          description='Active Projects'
-          color='#F1416C'
-          img={toAbsoluteUrl('/media/patterns/vector-1.png')}
-        />
-        <CardsWidget7
-          className='h-md-50 mb-5 mb-xl-10'
-          description='Professionals'
-          icon={false}
-          stats={357}
-          labelColor='dark'
-          textColor='gray-300'
-        />
+      <div className='col col-8'>
+        <div className='row mb-5 mb-xl-10'>
+          <div className='col-4'>
+            <StatisticsWidget7
+              className='card-xl-stretch'
+              color='primary'
+              title='400k Impressions'
+              description='리뷰 작성률 (일)'
+              progress='76%'
+            />
+          </div>
+          <div className='col-4'>
+            <StatisticsWidget7
+              className='card-xl-stretch'
+              color='primary'
+              title='400k Impressions'
+              description='리뷰 작성률 (주)'
+              progress='68%'
+            />
+          </div>
+          <div className='col-4'>
+            <StatisticsWidget7
+              className='card-xl-stretch'
+              color='primary'
+              title='400k Impressions'
+              description='리뷰 작성률 (월)'
+              progress='70%'
+            />
+          </div>
+        </div>
+        <ChartsWidget9 className='' />
+      </div>
+      {/* end::Col */}
+      {/* begin::Col */}
+      <div className='col col-4'>
+        <div className=''>
+          <ChartsWidget10 className='card-xl-stretch mb-xl-8' />
+        </div>
+        <div className=''>
+          <ChartsWidget1 className='card-xl-stretch mb-xl-8' />
+        </div>
       </div>
       {/* end::Col */}
     </div>
-    {/* end::Row */}
-
-    <div className='row g-5 gx-xxl-8'>
-      <div className='col-xxl-4'>
-        <MixedWidget8
-          className='card-xxl-stretch mb-xl-3'
-          chartColor='success'
-          chartHeight='150px'
-        />
-      </div>
-    </div>
+    {/* end::Raw */}
   </>
 )
 

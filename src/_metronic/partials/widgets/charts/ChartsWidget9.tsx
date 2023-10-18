@@ -41,7 +41,7 @@ const ChartsWidget9: React.FC<Props> = ({className}) => {
       {/* begin::Header */}
       <div className='card-header border-0 pt-5'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bold fs-3 mb-1'>Recent Orders</span>
+          <span className='card-label fw-bold fs-3 mb-1'>리뷰 작성률 모니터링</span>
 
           <span className='text-muted fw-semibold fs-7'>More than 500 new orders</span>
         </h3>

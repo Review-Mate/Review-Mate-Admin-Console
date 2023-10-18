@@ -39,6 +39,7 @@ export * from './statistics/StatisticsWidget3'
 export * from './statistics/StatisticsWidget4'
 export * from './statistics/StatisticsWidget5'
 export * from './statistics/StatisticsWidget6'
+export * from './statistics/StatisticsWidget7'
 
 // charts
 export * from './charts/ChartsWidget1'
@@ -50,6 +51,7 @@ export * from './charts/ChartsWidget6'
 export * from './charts/ChartsWidget7'
 export * from './charts/ChartsWidget8'
 export * from './charts/ChartsWidget9'
+export * from './charts/ChartsWidget10'
 
 // tables
 export * from './tables/TablesWidget1'

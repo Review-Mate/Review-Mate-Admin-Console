@@ -295,7 +295,7 @@ const Mixed: FC = () => {
       <div className='row g-5 g-xl-8'>
         {/* begin::Col */}
         <div className='col-xl-4'>
-          <MixedWidget9
+          <MixedWidget7
             className='card-xl-stretch mb-xl-8'
             chartColor='primary'
             chartHeight='150px'
